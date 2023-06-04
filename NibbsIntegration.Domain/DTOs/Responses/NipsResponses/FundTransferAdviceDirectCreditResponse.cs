@@ -1,7 +1,7 @@
 namespace NibbsIntegration.Domain;
 
-[XmlRoot(ElementName = "FTSingleCreditResponse")]
-public class NipsFundTransferSingleCreditResponse
+[XmlRoot(ElementName = "FTAdviceCreditResponse")]
+public class FundTransferAdviceDirectCreditResponse
 {
     [XmlElement(ElementName = "SessionID")]
     public string? SessionID { get; set; }
@@ -21,11 +21,11 @@ public class NipsFundTransferSingleCreditResponse
     [XmlElement(ElementName = "BeneficiaryAccountNumber")]
     public string? BeneficiaryAccountNumber { get; set; }
 
-    [XmlElement(ElementName = "BeneficiaryKYCLevel")]
-    public int BeneficiaryKYCLevel { get; set; }
-
     [XmlElement(ElementName = "BeneficiaryBankVerificationNumber")]
     public string? BeneficiaryBankVerificationNumber { get; set; }
+
+    [XmlElement(ElementName = "BeneficiaryKYCLevel")]
+    public int BeneficiaryKYCLevel { get; set; }
 
     [XmlElement(ElementName = "OriginatorAccountName")]
     public string? OriginatorAccountName { get; set; }
