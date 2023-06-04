@@ -1,4 +1,4 @@
-namespace NibbsIntegration.Service.Helpers;
+namespace NibbsIntegration.Service;
 
 public class Result<T>
 {

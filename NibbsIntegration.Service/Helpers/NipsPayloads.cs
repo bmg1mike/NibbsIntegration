@@ -1,4 +1,4 @@
-namespace NibbsIntegration.Service.Helpers;
+namespace NibbsIntegration.Service;
 
 public static class NipsPayloads
 {
@@ -136,6 +136,97 @@ public static class NipsPayloads
                             <TransactionFee>0.00</TransactionFee>
                             <Amount>1000.00</Amount>
                         </FTAdviceDebitRequest>";
+        return payload;
+    }
+
+    public static string AmountBlockRequest()
+    {
+        var payload = $@"<?xml version=""1.0"" encoding=""UTF-8"" ?>
+                        <AmountBlockRequest>
+                            <SessionID>000001100913103301000000000001</SessionID>
+                            <DestinationInstitutionCode>000002</DestinationInstitutionCode>
+                            <ChannelCode>7</ChannelCode>
+                            <ReferenceCode>xxxxxxxxxxxxxxx</ReferenceCode>
+                            <TargetAccountName>Ajibade Oluwasegun</TargetAccountName>
+                            <TargetBankVerificationNumber>1033000442</TargetBankVerificationNumber>
+                            <TargetAccountNumber>2222002345</TargetAccountNumber>
+                            <ReasonCode>0001</ReasonCode>
+                            <Narration>Transfer from 000002 to 0YY</Narration>
+                            <Amount>1000.00</Amount>
+                        </AmountBlockRequest>";
+        return payload;
+    }
+
+    public static string AmountUnblockRequest()
+    {
+        var payload = $@"<?xml version=""1.0"" encoding=""UTF-8"" ?>
+                        <AmountUnblockRequest>
+                            <SessionID>000001100913103301000000000001</SessionID>
+                            <DestinationInstitutionCode>000002</DestinationInstitutionCode>
+                            <ChannelCode>7</ChannelCode>
+                            <ReferenceCode>xxxxxxxxxxxxxxx</ReferenceCode>
+                            <TargetAccountName>Ajibade Oluwasegun</TargetAccountName>
+                            <TargetBankVerificationNumber>1033000442</TargetBankVerificationNumber>
+                            <TargetAccountNumber>2222002345</TargetAccountNumber>
+                            <ReasonCode>0001</ReasonCode>
+                            <Narration>Transfer from 000002 to 0YY</Narration>
+                            <Amount>1000.00</Amount>
+                        </AmountUnblockRequest>";
+        return payload;
+    }
+
+    public static string AccountBlockRequest()
+    {
+        var payload = $@"<?xml version=""1.0"" encoding=""UTF-8"" ?>
+                        <AccountBlockRequest>
+                            <SessionID>000001100913103301000000000001</SessionID>
+                            <DestinationInstitutionCode>000002</DestinationInstitutionCode>
+                            <ChannelCode>7</ChannelCode>
+                            <ReferenceCode>xxxxxxxxxxxxxxx</ReferenceCode>
+                            <TargetAccountName>Ajibade Oluwasegun</TargetAccountName>
+                            <TargetBankVerificationNumber>1033000442</TargetBankVerificationNumber>
+                            <TargetAccountNumber>2222002345</TargetAccountNumber>
+                            <ReasonCode>0001</ReasonCode>
+                            <Narration>Transfer from 000002 to 0YY</Narration>
+                        </AccountBlockRequest>";
+        return payload;
+    }
+
+    public static string AccountUnblockRequest()
+    {
+        var payload = $@"<?xml version=""1.0"" encoding=""UTF-8"" ?>
+                        <AccountUnblockRequest>
+                            <SessionID>000001100913103301000000000001</SessionID>
+                            <DestinationInstitutionCode>000002</DestinationInstitutionCode>
+                            <ChannelCode>7</ChannelCode>
+                            <ReferenceCode>xxxxxxxxxxxxxxx</ReferenceCode>
+                            <TargetAccountName>Ajibade Oluwasegun</TargetAccountName>
+                            <TargetBankVerificationNumber>1033000442</TargetBankVerificationNumber>
+                            <TargetAccountNumber>2222002345</TargetAccountNumber>
+                            <ReasonCode>0001</ReasonCode>
+                            <Narration>Transfer from 000002 to 0YY</Narration>
+                        </AccountUnblockRequest>";
+        return payload;
+    }
+
+    public static string MandateAdviceRequest()
+    {
+        var payload = $@"<?xml version=""1.0"" encoding=""UTF-8"" ?>
+                        <MandateAdviceRequest>
+                            <SessionID>000001100913103301000000000001</SessionID>
+                            <DestinationInstitutionCode>000002</DestinationInstitutionCode>
+                            <ChannelCode>7</ChannelCode>
+                            <MandateReferenceNumber>xxxxxxxxxxxxxxx</MandateReferenceNumber>
+                            <Amount>1000.00</Amount>
+                            <DebitAccountName>Ajibade Oluwasegun</DebitAccountName>
+                            <DebitAccountNumber>2222000000012345</DebitAccountNumber>
+                            <DebitBankVerificationNumber>1033000442</DebitBankVerificationNumber>
+                            <DebitKYCLevel>1</DebitKYCLevel>
+                            <BeneficiaryAccountName>Sarah Hassan Emeka</BeneficiaryAccountName>
+                            <BeneficiaryAccountNumber>2222002345</BeneficiaryAccountNumber>
+                            <BeneficiaryBankVerificationNumber>1033000442</BeneficiaryBankVerificationNumber>
+                            <BeneficiaryKYCLevel>1</BeneficiaryKYCLevel>
+                        </MandateAdviceRequest>";
         return payload;
     }
 }

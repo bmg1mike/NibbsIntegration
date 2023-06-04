@@ -1,8 +1,8 @@
-namespace NibbsIntegration.Domain.DTOs.Responses.NipsResponses;
+namespace NibbsIntegration.Domain;
 
 
 [XmlRoot(ElementName = "NESingleResponse")]
-public class NipsNameEnquirySingleResponse
+public class NameEnquirySingleResponse
 {
 
     [XmlElement(ElementName = "SessionID")]
